@@ -1,0 +1,22 @@
+Bankier
+Ekonomista
+Rolnik
+Rybak
+Pracownik usług domowych
+Operator maszyn
+Krawiec
+Technik górnictwa
+Robotnik leśny
+Fryzjer
+Sprzedawca sklepowy
+Ślusarz
+Kucharz
+Chemik
+Barman
+Konduktor
+Ćieśla
+Monter izolacji
+Windykator
+Kierowca
+Polityk
+Bezrobotny
