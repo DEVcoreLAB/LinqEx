@@ -12,6 +12,7 @@ namespace Generator
             //linijka do cwiczen
             List<KreatorListy.Dane> ListaLINQ = KreatorListy.GlownaLista.Where(p => p.pracownik == false).ToList();
 
+            //podmien ListaLINQ na KreatorListy.GlownaLista aby wyswietlic pelna kolekcje
             foreach (var item in ListaLINQ)
             {
                 Console.WriteLine($"{item.index} {item.imie} {item.nazwisko}");
