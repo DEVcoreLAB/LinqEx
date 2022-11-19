@@ -1,5 +1,5 @@
 # LinqEx - Projekt do ćwiczeń z LINQ. Generuje randomową kolekcję danych typu List<> zawierającą:
-
+#
 public class Dane
         {
             public int index { get; set; }
