@@ -119,18 +119,18 @@ namespace Generator
             if (x == 0)
             {
                 dna.plec = "Mężczyzna";
-                dna.imie = ImionaMeskie[new Random().Next(0,ImionaMeskie.Count - 1)];
-                dna.nazwisko = NazwiskaMeskie[new Random().Next(0, NazwiskaMeskie.Count - 1)];
+                dna.imie = ImionaMeskie[new Random().Next(0,ImionaMeskie.Count)];
+                dna.nazwisko = NazwiskaMeskie[new Random().Next(0, NazwiskaMeskie.Count)];
             }
             else if (x == 1)
             {
                 dna.plec = "Kobieta";
-                dna.imie = ImionaZenskie[new Random().Next(0, ImionaZenskie.Count - 1)];
-                dna.nazwisko = NazwiskaZenskie[new Random().Next(0, NazwiskaZenskie.Count - 1)];
+                dna.imie = ImionaZenskie[new Random().Next(0, ImionaZenskie.Count)];
+                dna.nazwisko = NazwiskaZenskie[new Random().Next(0, NazwiskaZenskie.Count)];
             }
             dna.dataUrodzenia = LosujDateUrodzenia();
             dna.pelnoletnosc =  CzyPelnoletni(dna.dataUrodzenia);
-            dna.miasto = Miasta[new Random().Next(0, Miasta.Count - 1)];
+            dna.miasto = Miasta[new Random().Next(0, Miasta.Count)];
 
             string zawod = Zawody[new Random().Next(0, Zawody.Count)];
             double zarobki;
@@ -157,7 +157,7 @@ namespace Generator
 
         private static DateTime LosujDateUrodzenia()
         {
-            int year = new Random().Next(1970, DateTime.Now.Year - 18);
+            int year = new Random().Next(1970, DateTime.Now.Year - 16);
             int month = new Random().Next(1, 13);
             int day = new Random().Next(1, DateTime.DaysInMonth(year, month) + 1);
             var data = new DateTime(year, month, day);
