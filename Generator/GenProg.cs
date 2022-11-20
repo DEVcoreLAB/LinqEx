@@ -6,7 +6,7 @@ namespace Generator
     {
         static void Main(string[] args)
         {
-            KreatorListy.GenerujListe();
+            KreatorListy.GenerujListe(); 
             Console.WriteLine();
             
             //linijka do cwiczen
